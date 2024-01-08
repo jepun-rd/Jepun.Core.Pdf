@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <BaseOutputPath>D:\RD2\Jepun.Framework\MyNet8.0\dlls</BaseOutputPath>
+  </PropertyGroup>
+
+
+	<ItemGroup>
+		<!--此包先不使用 讓外部去引用-->
+		<!--<PackageReference Include="itext.licensing.base" Version="4.1.0" />-->
+		<PackageReference Include="itext7" Version="8.0.1" />
+		<PackageReference Include="itext7.bouncy-castle-adapter" Version="8.0.1" />
+		<PackageReference Include="itext7.pdfoptimizer" Version="3.0.0" />
+	</ItemGroup>
+</Project>
