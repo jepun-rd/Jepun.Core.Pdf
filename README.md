@@ -1,5 +1,6 @@
 Use iText to process PDF file imprinting.
 
+<code>
 using iText.Licensing.Base;
 using Jepun.Core.Pdf;
 using Jepun.Core.Pdf.Model;
@@ -22,6 +23,7 @@ namespace Jepun.Core.Pdf.Test
      list.Add(pdfImgs);
      list.Add(pdfImgs);
      Tuple<byte[], int,string> result = PdfHelper.SearchMultiTextAddImgToPdf(templateBytes, keyWords, list);
-     File.WriteAllBytes( $"result.pdf", result.Item1);
+     File.WriteAllBytes("result.pdf", result.Item1);
   }
 }
+</code>
